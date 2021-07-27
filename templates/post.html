@@ -1,15 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
 	<div class="container">
-		{% for post in posts %}
 		<div class="row mb-2">
 			<div class="col-md mx-auto bg-primary text-light">
-				<h2><a class="text-light" href="/post/{{post.id}}">{{ post.title }}</a></h2>
-				<h5>{{ post.created_at }}</h5>
-				<p>{{ post.body|truncatewords:35 }}</p>
+				<h2><a class="text-light" href="">{{ read.title }}</a></h2>
+				<h5>{{ read.created_at }}</h5>
+				<p>{{ read.body }}</p>
 			</div>
 			<hr>
 		</div>
-		{% endfor %}
+		<a class="btn btn-primary" href="/">Back</a>
 	</div>
 {% endblock content %}
