@@ -77,11 +77,12 @@ WSGI_APPLICATION = 'debigo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'debigo',
-        'USER':'postgres',
-        'PASSWORD':'dataadmin',
-        'HOST':'localhost'
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '/opt/lampp/var/mysql/mysql.sock',
+        'PORT': '3306',
     }
 }
 
